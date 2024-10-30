@@ -7,28 +7,32 @@
         <div class="container-fluid collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav gap-3">
                 <li class="nav-item">
-                    <a class="nav-link text-primary" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="input-data-buku.php">Customer</a>
+                    <a class="nav-link" href="daftar-customer.php">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="input-data-pengarang.php">Barang</a>
+                    <a class="nav-link" href="daftar-barang.php">Barang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-primary" href="input-data-penerbit.php">Transaksi</a>
+                    <a class="nav-link" href="daftar-transaksi.php">Transaksi</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-primary">
-                        <i class="bi bi-person-fill"></i>
-                        Username
-                    </button>
+                    <a href="details-user.php">
+                        <button class="btn btn-primary">
+                            <i class="bi bi-person-fill"></i>
+                            Username
+                        </button>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-secondary">
-                        <i class="bi bi-person-fill"></i>
-                        Log Out
-                    </button>
+                    <a href="login.php">
+                        <button class="btn btn-secondary">
+                            <i class="bi bi-door-open-fill"></i>
+                            Log Out
+                        </button>
+                    </a>
                 </li>
             </ul>
         </div>
