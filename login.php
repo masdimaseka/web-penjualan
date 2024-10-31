@@ -27,7 +27,7 @@
                     </div>
                     <div class="mt-5">
                         <label for="name">Password</label>
-                        <input class="form-control" type=" text" paceholder="Password" id="name" name="name">
+                        <input class="form-control" type="password" paceholder="Password" id="name" name="name">
                     </div>
                     <button type="submit" class="mt-5 py-2 btn btn-primary w-100">Sign In</button>
                     <a href="#">
