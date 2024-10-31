@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="menus mt-3 mb-5 d-flex justify-content-center gap-3">
+    <div class=" mt-3 mb-5 d-flex justify-content-center gap-3 flex-column-reverse flex-lg-row">
       <div class="cutomer">
         <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./input-data-customer.php">
           <i class="menu-icon bi bi-emoji-wink-fill"></i>
@@ -48,7 +48,7 @@
           <h5>Daftar Barang</h5>
         </a>
       </div>
-      <div class="transaksi d-flex gap-3">
+      <div class=" flex-column flex-lg-row d-flex gap-3">
         <a class=" btn-success input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./transaksi-penjualan.php">
           <i class="menu-icon bi bi-layer-backward"></i>
           <h5>Transaksi Penjualan</h5>

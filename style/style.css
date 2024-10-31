@@ -37,11 +37,25 @@ body{
 
 .btn-success{
     background-color: var(--success-color);
+    border: none;
     color: white;
 }
 
 .btn-success:hover{
     background-color: var(--success-hover);
+    border: none;
+    color: white;
+}
+
+.btn-danger{
+    background-color: var(--danger-color);
+    border: none;
+    color: white;
+}
+
+.btn-danger:hover{
+    background-color: var(--danger-hover);
+    border: none;
     color: white;
 }
 
@@ -67,3 +81,8 @@ body{
 input:hover{
     border: 1px solid var(--primary-color);
 }
+
+.username-display{
+    cursor: default;
+}
+

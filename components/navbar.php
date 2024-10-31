@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container-fluid collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav gap-3">
+            <ul class="navbar-nav align-items-center gap-3">
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
@@ -18,13 +18,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="daftar-transaksi.php">Transaksi</a>
                 </li>
-                <li class="nav-item">
-                    <a href="details-user.php">
-                        <button class="btn btn-primary">
-                            <i class="bi bi-person-fill"></i>
-                            Username
-                        </button>
-                    </a>
+                <li>
+                    <span class="btn username-display btn-primary">
+                        <i class="bi bi-person-fill"></i>
+                        Username
+                    </span>
                 </li>
                 <li class="nav-item">
                     <a href="login.php">
