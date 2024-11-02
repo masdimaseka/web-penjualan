@@ -18,8 +18,8 @@
             <h1>Input Data Customer</h1>
             <form action="">
                 <div class="mt-5">
-                    <label for="kodeCust" class="form-label">Kode Customer</label>
-                    <input type="text" class="form-control" id="kodeCust" placeholder="12345" disabled>
+                    <p>Kode Customer</p>
+                    <span class="form-control">1234</span>
                 </div>
                 <div class="mt-4">
                     <label for="namaCust" class="form-label">Nama Customer</label>

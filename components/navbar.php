@@ -16,7 +16,7 @@
                     <a class="nav-link" href="daftar-barang.php">Barang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="daftar-transaksi.php">Transaksi</a>
+                    <a class="nav-link" href="laporan-transaksi.php">Transaksi</a>
                 </li>
                 <li>
                     <span class="btn username-display btn-primary">

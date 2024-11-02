@@ -16,7 +16,7 @@
     <div class="container d-flex justify-content-center">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3 d-flex">
             <div class="d-none d-lg-block me-5">
-                <img class="rounded" src="./public/imgs/banner-login.png" alt="">
+                <img class="rounded" src="./public/imgs/banner-login-2.png" alt="">
             </div>
             <div class="d-flex flex-column justify-content-center">
                 <h1>Login</h1>
@@ -28,6 +28,9 @@
                     <div class="mt-5">
                         <label for="name">Password</label>
                         <input class="form-control" type="password" paceholder="Password" id="name" name="name">
+                    </div>
+                    <div class="d-flex justify-content-end mt-4">
+                        <a style="font-size: 12px;">Forgot Password ?</a>
                     </div>
                     <button type="submit" class="mt-5 py-2 btn btn-primary w-100">Sign In</button>
                     <a href="#">

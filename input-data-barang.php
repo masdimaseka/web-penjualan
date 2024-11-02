@@ -18,8 +18,8 @@
             <h1>Input Data Barang</h1>
             <form action="">
                 <div class="mt-5">
-                    <label for="kodeBarang" class="form-label">Kode Barang</label>
-                    <input type="text" class="form-control" id="kodeBarang" placeholder="12345" disabled>
+                    <p>Kode Barang</p>
+                    <span class="form-control">1234</span>
                 </div>
                 <div class="mt-4">
                     <label for="namaBarang" class="form-label">Nama Barang</label>

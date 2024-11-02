@@ -49,11 +49,11 @@
         </a>
       </div>
       <div class=" flex-column flex-lg-row d-flex gap-3">
-        <a class=" btn-success input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./transaksi-penjualan.php">
+        <a class=" btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./transaksi-penjualan.php">
           <i class="menu-icon bi bi-layer-backward"></i>
           <h5>Transaksi Penjualan</h5>
         </a>
-        <a class="btn-success input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./daftar-transaksi.php">
+        <a class="btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./daftar-transaksi.php">
           <i class="menu-icon vbi bi-file-earmark-fill"></i>
           <h5>Daftar Transaksi</h5>
         </a>
