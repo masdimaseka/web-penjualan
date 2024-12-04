@@ -29,33 +29,33 @@
     </div>
     <div class=" mt-3 mb-5 d-flex justify-content-center gap-3 flex-column-reverse flex-lg-row">
       <div class="cutomer">
-        <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./input-data-customer.php">
+        <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./pages/customers/input-data-customer.php">
           <i class="menu-icon bi bi-emoji-wink-fill"></i>
           <h5>Input Customer</h5>
         </a>
-        <a class="menu input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./daftar-customer.php">
+        <a class="menu input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/customers/daftar-customer.php">
           <i class="menu-icon  bi bi-people-fill"></i>
           <h5>Daftar Customer</h5>
         </a>
       </div>
       <div class="barang">
-        <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./input-data-barang.php">
+        <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./pages/barang/input-data-barang.php">
           <i class="menu-icon bi bi-archive-fill"></i>
           <h5>Input Barang</h5>
         </a>
-        <a class="menu input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./daftar-barang.php">
+        <a class="menu input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/barang/daftar-barang.php">
           <i class="menu-icon bi bi-collection-fill"></i>
           <h5>Daftar Barang</h5>
         </a>
       </div>
       <div class=" flex-column flex-lg-row d-flex gap-3">
-        <a class=" btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./transaksi-penjualan.php">
+        <a class=" btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/transaksi-penjualan.php">
           <i class="menu-icon bi bi-layer-backward"></i>
           <h5>Transaksi Penjualan</h5>
         </a>
-        <a class="btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./daftar-transaksi.php">
+        <a class="btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/laporan-transaksi.php">
           <i class="menu-icon vbi bi-file-earmark-fill"></i>
-          <h5>Daftar Transaksi</h5>
+          <h5>Laporan Transaksi</h5>
         </a>
       </div>
     </div>
