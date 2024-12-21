@@ -10,10 +10,7 @@
 </head>
 
 <body>
-    <?php
-    include_once("components/navbar.php")
-    ?>
-    <div class="container d-flex justify-content-center">
+    <div class="container mt-3 d-flex justify-content-center">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3 d-flex">
             <div class="d-none d-lg-block me-5">
                 <img class="rounded" src="./public/imgs/banner-login-2.png" alt="">

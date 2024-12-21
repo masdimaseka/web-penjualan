@@ -14,7 +14,7 @@
     <?php
     include_once("../../components/navbar.php")
     ?>
-    <div class="container">
+    <div class="container content">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <div class="flex-column flex-lg-row d-flex justify-content-between gap-3 pb-3 mb-4 border-bottom">
                 <h1>Daftar Barang</h1>

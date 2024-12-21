@@ -13,7 +13,7 @@
   <?php
   include("components/navbar.php")
   ?>
-  <div class="container">
+  <div class="container content">
     <div id="carouselExampleSlidesOnly" class="mt-3 carousel slide carousel-home" data-bs-ride="carousel">
       <div class="carousel-inner rounded">
         <div class="carousel-item active">

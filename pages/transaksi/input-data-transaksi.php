@@ -13,7 +13,7 @@
     <?php
     include_once("../../components/navbar.php")
     ?>
-    <div class="container">
+    <div class="container content">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <h1>Input Transaksi Penjualan</h1>
             <form action="">

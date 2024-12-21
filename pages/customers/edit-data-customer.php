@@ -13,12 +13,12 @@
     <?php
     include_once("../../components/navbar.php");
     $data_kode = $_GET["kode"];
-    include "../../connection/conn-db.php";
+    require("../../connection/conn-db.php");
     $customer = mysqli_query($connection, "select * from customer where kode = '$data_kode'");
     $data = mysqli_fetch_assoc($customer)
     ?>
 
-    <div class="container">
+    <div class="container content">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <h1>Input Data Customer</h1>
             <form method="POST" action="../../controller/update-data-customer.php">

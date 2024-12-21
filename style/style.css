@@ -5,6 +5,10 @@ body{
     font-family: "Inter", serif;
 }
 
+.content{
+    margin-top: 15vh;
+}
+
 .text-primary{
     color: var(--primary-color) !important;
 }
@@ -85,6 +89,25 @@ input:hover{
 .username-display{
     cursor: default;
 }
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color); 
+    border-color: var(--primary-hover); 
+    color: #ffffff; 
+}
+.pagination .page-item.active .page-link:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-color);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #aeaeae; 
+}
+
+.pagination .page-item .page-link {
+    color: var(--primary-color);
+}
+
 
 /* .input-display{
     padding: 2px 4px;

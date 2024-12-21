@@ -11,9 +11,24 @@
 
 <body>
     <?php
+    session_start();
     include_once("../../components/navbar.php")
     ?>
-    <div class="container">
+    <div class="container content">
+        <?php
+        if (isset($_SESSION['message'])) {
+            $messageType = $_SESSION['message']['type'];
+            $messageContent = $_SESSION['message']['content'];
+
+            echo "
+            <div class='alert alert-$messageType alert-dismissible fade show' role='alert'>
+                $messageContent
+                <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
+            </div>";
+
+            unset($_SESSION['message']);
+        }
+        ?>
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <div class="flex-column flex-lg-row d-flex justify-content-between gap-3 pb-3 mb-4 border-bottom">
                 <h1>Daftar Customer</h1>
@@ -44,9 +59,19 @@
                         </thead>
                         <tbody>
                             <?php
-                            include "../../connection/conn-db.php";
-                            $customers = mysqli_query($connection, "select * from customer");
-                            $jmlCust = $customers->num_rows;
+                            require("../../connection/conn-db.php");
+
+                            $perPage = 5;
+                            $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                            $startAt = ($page - 1) * $perPage;
+
+                            $totalQuery = mysqli_query($connection, "SELECT COUNT(*) AS total FROM customer");
+                            $totalData = mysqli_fetch_assoc($totalQuery)['total'];
+
+                            $customers = mysqli_query($connection, "SELECT * FROM customer LIMIT $startAt, $perPage");
+
+                            $totalPages = ceil($totalData / $perPage);
+
                             $no = 0;
                             foreach ($customers as $customer) {
                                 $no++;
@@ -73,7 +98,23 @@
                     </table>
                 </div>
             </div>
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item <?= ($page <= 1) ? 'disabled' : ''; ?>">
+                        <a class="page-link" href="?page=<?= $page - 1; ?>"><i class="bi bi-arrow-left-short"></i></a>
+                    </li>
 
+                    <?php for ($i = 1; $i <= $totalPages; $i++) { ?>
+                        <li class="page-item <?= ($page == $i) ? 'active' : ''; ?>">
+                            <a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a>
+                        </li>
+                    <?php } ?>
+
+                    <li class="page-item <?= ($page >= $totalPages) ? 'disabled' : ''; ?>">
+                        <a class="page-link" href="?page=<?= $page + 1; ?>"><i class="bi bi-arrow-right-short"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
