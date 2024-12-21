@@ -1,3 +1,7 @@
+<?php
+session_start();
+require("../../controller/session-validation.php"); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -11,7 +15,6 @@
 
 <body>
     <?php
-    session_start();
     include_once("../../components/navbar.php")
     ?>
     <div class="container content">

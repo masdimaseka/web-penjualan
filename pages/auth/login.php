@@ -1,3 +1,6 @@
+<?php
+session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -13,7 +16,6 @@
 
     <div class="container mt-5">
         <?php
-        session_start();
 
         if (isset($_SESSION['message'])) {
             $messageType = $_SESSION['message']['type'];

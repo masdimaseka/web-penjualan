@@ -1,3 +1,7 @@
+<?php
+session_start();
+require("../../controller/session-validation.php"); ?>
+
 <!doctype html>
 <html lang="en">
 

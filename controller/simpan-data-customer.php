@@ -6,10 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dataTelpCust = $_POST["telpCust"];
     $dataNikCust = $_POST["nikCust"];
     $dataNpwpCust = $_POST["npwpCust"];
+    $dataCreatedBy = $_SESSION['valid'];
 
-    if ($dataNamaCust != "" || $dataAlamatCust != "" || $dataTelpCust != "" || $dataNikCust != "" || $dataNpwpCust != "") {
+    if ($dataNamaCust != "" || $dataAlamatCust != "" || $dataTelpCust != "" || $dataNikCust != "" || $dataNpwpCust != "" || $dataCreatedBy != "") {
         require("../connection/conn-db.php");
-        $sql = "insert into customer (nama, alamat, telp, nik, npwp) values ('$dataNamaCust','$dataAlamatCust','$dataTelpCust','$dataNikCust','$dataNpwpCust')";
+        $sql = "insert into customer (nama, alamat, telp, nik, npwp, created_by) values ('$dataNamaCust','$dataAlamatCust','$dataTelpCust','$dataNikCust','$dataNpwpCust', '$dataCreatedBy')";
         $save = mysqli_query($connection, $sql);
 
         try {
