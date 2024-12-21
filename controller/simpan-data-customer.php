@@ -12,15 +12,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "insert into customer (nama, alamat, telp, nik, npwp) values ('$dataNamaCust','$dataAlamatCust','$dataTelpCust','$dataNikCust','$dataNpwpCust')";
         $save = mysqli_query($connection, $sql);
 
-        if ($save) {
-            $_SESSION['message'] = [
-                'type' => 'success',
-                'content' => 'Data berhasil disimpan!',
-            ];
-        } else {
+        try {
+            if ($save) {
+                $_SESSION['message'] = [
+                    'type' => 'success',
+                    'content' => 'Data berhasil disimpan!',
+                ];
+            } else {
+                $_SESSION['message'] = [
+                    'type' => 'danger',
+                    'content' => 'Data gagal disimpan!',
+                ];
+            }
+        } catch (mysqli_sql_exception $e) {
             $_SESSION['message'] = [
                 'type' => 'danger',
-                'content' => 'Data gagal disimpan!',
+                'content' => 'Error: ' . $e->getMessage(),
             ];
         }
     } else {

@@ -46,11 +46,11 @@
                 <li>
                     <span class="btn username-display btn-primary">
                         <i class="bi bi-person-fill"></i>
-                        Username
+                        <?= $_SESSION['valid'] ?>
                     </span>
                 </li>
                 <li class="nav-item">
-                    <a href="login.php">
+                    <a href="/web-penjualan/controller/session-end.php">
                         <button class="btn btn-secondary">
                             <i class="bi bi-door-open-fill"></i>
                             Log Out

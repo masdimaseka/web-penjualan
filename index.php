@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 
@@ -11,7 +12,8 @@
 
 <body>
   <?php
-  include("components/navbar.php")
+  require("controller/session-validation.php");
+  include("components/navbar.php");
   ?>
   <div class="container content">
     <div id="carouselExampleSlidesOnly" class="mt-3 carousel slide carousel-home" data-bs-ride="carousel">

@@ -1,0 +1,6 @@
+Options -Indexes
+
+DirectoryIndex index.php index.html
+
+ErrorDocument 403 /web-penjualan/pages/error/403.php
+ErrorDocument 404 /web-penjualan/pages/error/404.php
