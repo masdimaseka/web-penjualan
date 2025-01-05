@@ -24,7 +24,7 @@ require("../../controller/session-validation.php"); ?>
 
     <div class="container content">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
-            <h1>Input Data Customer</h1>
+            <h1>Edit Data Customer</h1>
             <form method="POST" action="../../controller/update-data-customer.php">
                 <div class="mt-5">
                     <label for="kodeCust" class="form-label">Kode Customer</label>

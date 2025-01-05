@@ -15,35 +15,43 @@ require("../../controller/session-validation.php"); ?>
 
 <body>
     <?php
-    include_once("../../components/navbar.php")
+    include_once("../../components/navbar.php");
+    $data_kode = $_GET["kode"];
+    require("../../connection/conn-db.php");
+    $barang = mysqli_query($connection, "select * from barang where kode = '$data_kode'");
+    $data = mysqli_fetch_assoc($barang)
     ?>
 
     <div class="container content">
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
-            <h1>Input Data barang</h1>
-            <form method="POST" action="../../controller/simpan-data-barang.php">
+            <h1>Edit Data Barang</h1>
+            <form method="POST" action="../../controller/update-data-barang.php">
+                <div class="mt-5">
+                    <label for="kodeBara" class="form-label">Kode Barang</label>
+                    <input value="<?= $data_kode ?>" readonly type="text" class="form-control" id="kodeBara" name="kodeBara">
+                </div>
                 <div class="mt-4">
-                    <label for="namaBara" class="form-label">Nama barang</label>
-                    <input type="text" class="form-control" id="namaBara" name="namaBara" placeholder="nama barang..." required>
+                    <label for="namaBara" class="form-label">Nama Barang</label>
+                    <input value="<?= $data['nama_barang'] ?>" type="text" class="form-control" id="namaBara" name="namaBara" placeholder="nama barang..." required>
                 </div>
                 <div class="mt-4">
                     <label for="satuanBara" class="form-label">Satuan</label>
-                    <input type="text" class="form-control" id="satuanBara" name="satuanBara" placeholder="satuan..." required>
+                    <input value="<?= $data['satuan'] ?>" type="text" class="form-control" id="satuanBara" name="satuanBara" placeholder="satuan barang..." required>
                 </div>
                 <div class="mt-4">
-                    <label for="stokAwal" class="form-label">Stock Awal</label>
-                    <input type="number" class="form-control" id="stokAwal" name="stokAwal" placeholder="stok awal..." required>
+                    <label for="stokAwal" class="form-label">Stok Awal</label>
+                    <input value="<?= $data['stok_awal'] ?>" type="number" class="form-control" id="stokAwal" name="stokAwal" placeholder="stok awal..." required>
                 </div>
                 <div class="mt-4">
                     <label for="HPP" class="form-label">HPP</label>
-                    <input type="number" class="form-control" id="HPP" name="HPP" placeholder="HPP..." required>
+                    <input value="<?= $data['HPP'] ?>" type="number" class="form-control" id="HPP" name="HPP" placeholder="HPP..." required>
                 </div>
                 <div class="mt-4">
                     <label for="hargaBara" class="form-label">Harga Jual</label>
-                    <input type="number" class="form-control" id="hargaBara" name="hargaBara" placeholder="harga jual..." required>
+                    <input value="<?= $data['harga_jual'] ?>" type="number" class="form-control" id="hargaBara" name="hargaBara" placeholder="Harga..." required>
                 </div>
                 <button type="submit" class="mt-5 py-2 btn btn-primary w-100">Simpan</button>
-                <a href="./daftar-Baraomer.php">
+                <a href="./daftar-barang.php">
                     <button type="button" class="mt-3 py-2 btn btn-secondary w-100">Batal</button>
                 </a>
             </form>

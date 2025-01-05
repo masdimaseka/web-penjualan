@@ -21,9 +21,6 @@ require("../../controller/session-validation.php"); ?>
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <div class="d-flex flex-lg-row flex-column justify-content-lg-between align-items-lg-center gap-3 mb-3">
                 <h1>Laporan Transaksi</h1>
-                <a href="./transaksi-penjualan.php">
-                    <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Input Data</button>
-                </a>
             </div>
             <div class="p-4 border border-1 rounded-3">
                 <h3>Laporan Transaksi Penjualan Harian</h3>
