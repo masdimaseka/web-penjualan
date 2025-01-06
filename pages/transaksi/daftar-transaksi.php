@@ -36,11 +36,6 @@ require("../../controller/session-validation.php"); ?>
             <div class="flex-column flex-lg-row d-flex justify-content-between gap-3 pb-3 mb-4 border-bottom">
                 <h1>Daftar Transaksi</h1>
                 <div class="flex-column flex-lg-row d-flex gap-3 align-items-start align-items-lg-center ">
-                    <div class="d-flex align-items-center gap-3">
-                        <label for="seacrhDataCustomer" class="form-label">Seacrh</label>
-                        <input type="text" class="form-control" id="searchDataCustomer">
-                        <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                    </div>
                     <a href="./input-data-transaksi.php">
                         <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Input Data</button>
                     </a>
@@ -54,6 +49,7 @@ require("../../controller/session-validation.php"); ?>
                                 <th class="col-1" scope="col">No Invoice</th>
                                 <th class="col-2" scope="col">Tgl Transaksi</th>
                                 <th class="col-2" scope="col">Kode Customer</th>
+                                <th class="col-2" scope="col">Nama Customer</th>
                                 <th class="col-1" scope="col">Action</th>
                             </tr>
                         </thead>
@@ -80,6 +76,7 @@ require("../../controller/session-validation.php"); ?>
                                         <td class="px-2 py-4">' . $transaction['no_invoice'] . '</td>
                                         <td class="px-2 py-4">' . $transaction['tgl_transaksi'] . '</td>
                                         <td class="px-2 py-4">' . $transaction['kode_customer'] . '</td>
+                                        <td class="px-2 py-4">' . $transaction['nama_customer'] . '</td>
                                         <td class="px-2 py-4">
                                             <div class="d-flex gap-2">
                                                 <a href="detail-transaksi.php?no_invoice=' . $transaction["no_invoice"] . '" class="btn btn-success"><i class="bi bi-eye-fill"></i></i></a>

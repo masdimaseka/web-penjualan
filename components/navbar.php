@@ -39,7 +39,8 @@
                         <ul class="dropdown-menu">
                             <li class="dropdown-item"><a class="nav-link" href="/web-penjualan/pages/transaksi/daftar-transaksi.php">Daftar Transaksi</a></li>
                             <li class="dropdown-item"><a class="nav-link" href="/web-penjualan/pages/transaksi/input-data-transaksi.php">Input Transaksi</a></li>
-                            <li class="dropdown-item"><a class="nav-link" href="/web-penjualan/pages/transaksi/laporan-transaksi.php">Laporan Transaksi</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="/web-penjualan/pages/transaksi/laporan-transaksi-harian.php">Laporan Transaksi</a></li>
+                            <li class="dropdown-item"><a class="nav-link" href="/web-penjualan/pages/transaksi/laporan-omset-harian.php">Laporan Omset</a></li>
                         </ul>
                     </div>
                 </li>

@@ -35,13 +35,6 @@ require("../../controller/session-validation.php"); ?>
         <div class="container-form mt-4 mb-5 px-5 py-5 rounded-3">
             <div class="flex-column flex-lg-row d-flex justify-content-between gap-3 pb-3 mb-4 border-bottom">
                 <h1>Detail Transaksi</h1>
-                <div class="flex-column flex-lg-row d-flex gap-3 align-items-start align-items-lg-center ">
-                    <div class="d-flex align-items-center gap-3">
-                        <label for="seacrhDataCustomer" class="form-label">Seacrh</label>
-                        <input type="text" class="form-control" id="searchDataCustomer">
-                        <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
             </div>
             <div>
                 <div class="table-responsive">
@@ -49,8 +42,11 @@ require("../../controller/session-validation.php"); ?>
                         <thead>
                             <tr>
                                 <th class="col-1" scope="col">No Invoice</th>
-                                <th class="col-2" scope="col">Kode Barang</th>
-                                <th class="col-2" scope="col">Nama Barang</th>
+                                <th class="col-1" scope="col">Tgl Transaksi</th>
+                                <th class="col-1" scope="col">Kode Customer</th>
+                                <th class="col-1" scope="col">Nama Customer</th>
+                                <th class="col-1" scope="col">Kode Barang</th>
+                                <th class="col-1" scope="col">Nama Barang</th>
                                 <th class="col-1" scope="col">Jumlah</th>
                                 <th class="col-1" scope="col">Harga Barang</th>
                                 <th class="col-1" scope="col">Total</th>
@@ -81,6 +77,9 @@ require("../../controller/session-validation.php"); ?>
                                     echo '
                                         <tr>
                                             <td class="px-2 py-4">' . $transaction_detail['no_invoice'] . '</td>
+                                            <td class="px-2 py-4">' . $transaction_detail['tgl_transaksi'] . '</td>
+                                            <td class="px-2 py-4">' . $transaction_detail['kode_customer'] . '</td>
+                                            <td class="px-2 py-4">' . $transaction_detail['nama_customer'] . '</td>
                                             <td class="px-2 py-4">' . $transaction_detail['kode_barang'] . '</td>
                                             <td class="px-2 py-4">' . $transaction_detail['nama_barang'] . '</td>
                                             <td class="px-2 py-4">' . $transaction_detail['jumlah'] . '</td>

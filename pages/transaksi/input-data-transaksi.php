@@ -31,52 +31,54 @@ require("../../controller/session-validation.php"); ?>
                 </div>
                 <div class="mt-4">
                     <label for="kodeCust" class="form-label">Customer</label>
-                    <input type="int" name="kodeCust" class="form-control" id="codeCust" placeholder="Kode Customer..." required>
-                </div>
+                    <div class="d-flex flex-lg-row flex-column gap-3">
+                        <input type="int" name="kodeCust" class="form-control" id="codeCust" placeholder="Kode Customer..." required>
+                        <input type="text" name="namaCust" class="form-control" id="namaCust" placeholder="Nama Customer..." required>
+                    </div>
 
-                <div class="table-responsive mt-5">
-                    <table class="table table-hover table-fixed" id="tableBarang">
-                        <thead>
-                            <tr>
-                                <th class="col-1" scope="col">Kode Barang</th>
-                                <th class="col-2" scope="col">Nama Barang</th>
-                                <th class="col-1" scope="col">Jumlah</th>
-                                <th class="col-1" scope="col">Harga Satuan</th>
-                                <th class="col-1" scope="col">Harga Total</th>
-                                <th class="col-1 text-center" scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="detailBarang">
-                            <tr>
-                                <td class="px-2 py-4">
-                                    <input type="int" class="form-control" id="noBarang" name="kodeBarang[]" placeholder="Kode barang..." required>
-                                </td>
-                                <td class="px-2 py-4">
-                                    <input type="int" class="form-control" id="namaBarang" name="namaBarang[]" placeholder="Nama barang..." required>
-                                </td>
-                                <td class="px-2 py-4">
-                                    <input type="int" class="form-control" id="jumBarang" name="jumlahBarang[]" placeholder="Jumlah..." required oninput="updateHargaTotal(this)">
-                                </td>
-                                <td class="px-2 py-4">
-                                    <input type="int" class="form-control" id="hargaBarang" name="hargaBarang[]" placeholder="Harga barang..." required oninput="updateHargaTotal(this)">
-                                </td>
-                                <td class="px-2 py-4">
-                                    <input type="int" class="form-control" id="hargaTotal" name="hargaTotal[]" placeholder="Total Harga..." readonly>
-                                </td>
-                                <td class="px-2 py-4 text-center">
-                                    <button onclick="hapusBaris(this)" type=" button" class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
-                                </td>
+                    <div class="table-responsive mt-5">
+                        <table class="table table-hover table-fixed" id="tableBarang">
+                            <thead>
+                                <tr>
+                                    <th class="col-1" scope="col">Kode Barang</th>
+                                    <th class="col-2" scope="col">Nama Barang</th>
+                                    <th class="col-1" scope="col">Jumlah</th>
+                                    <th class="col-1" scope="col">Harga Satuan</th>
+                                    <th class="col-1" scope="col">Harga Total</th>
+                                    <th class="col-1 text-center" scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detailBarang">
+                                <tr>
+                                    <td class="px-2 py-4">
+                                        <input type="int" class="form-control" id="noBarang" name="kodeBarang[]" placeholder="Kode barang..." required>
+                                    </td>
+                                    <td class="px-2 py-4">
+                                        <input type="int" class="form-control" id="namaBarang" name="namaBarang[]" placeholder="Nama barang..." required>
+                                    </td>
+                                    <td class="px-2 py-4">
+                                        <input type="int" class="form-control" id="jumBarang" name="jumlahBarang[]" placeholder="Jumlah..." required oninput="updateHargaTotal(this)">
+                                    </td>
+                                    <td class="px-2 py-4">
+                                        <input type="int" class="form-control" id="hargaBarang" name="hargaBarang[]" placeholder="Harga barang..." required oninput="updateHargaTotal(this)">
+                                    </td>
+                                    <td class="px-2 py-4">
+                                        <input type="int" class="form-control" id="hargaTotal" name="hargaTotal[]" placeholder="Total Harga..." readonly>
+                                    </td>
+                                    <td class="px-2 py-4 text-center">
+                                        <button onclick="hapusBaris(this)" type=" button" class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+                                    </td>
 
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button type="button" class="btn btn-success" onclick="tambahBaris()">Tambah Barang</button>
-                </div>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-success" onclick="tambahBaris()">Tambah Barang</button>
+                    </div>
 
-                <button type="submit" class="mt-5 py-2 btn btn-primary w-100">Simpan</button>
-                <a href="./daftar-transaksi.php">
-                    <button type="button" class="mt-3 py-2 btn btn-secondary w-100">Batal</button>
-                </a>
+                    <button type="submit" class="mt-5 py-2 btn btn-primary w-100">Simpan</button>
+                    <a href="./daftar-transaksi.php">
+                        <button type="button" class="mt-3 py-2 btn btn-secondary w-100">Batal</button>
+                    </a>
             </form>
         </div>
     </div>

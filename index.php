@@ -51,14 +51,20 @@ require("controller/session-validation.php"); ?>
           <h5>Daftar Barang</h5>
         </a>
       </div>
-      <div class=" flex-column flex-lg-row d-flex gap-3">
-        <a class=" btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/transaksi-penjualan.php">
+      <div class="barang">
+        <a class="menu input-customer d-flex align-items-center gap-3 mb-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/laporan-transaksi-harian.php">
           <i class="menu-icon bi bi-layer-backward"></i>
-          <h5>Transaksi Penjualan</h5>
-        </a>
-        <a class="btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/laporan-transaksi.php">
-          <i class="menu-icon vbi bi-file-earmark-fill"></i>
           <h5>Laporan Transaksi</h5>
+        </a>
+        <a class="menu input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/laporan-omset-harian.php">
+          <i class="menu-icon bi bi-wallet-fill"></i>
+          <h5>Laporan Omset</h5>
+        </a>
+      </div>
+      <div class=" flex-column flex-lg-row d-flex gap-3">
+        <a class="btn-primary text-white input-customer d-flex align-items-center gap-3 px-4 py-2 rounded nav-link" href="./pages/transaksi/daftar-transaksi.php">
+          <i class="menu-icon vbi bi-file-earmark-fill"></i>
+          <h5>Daftar Transaksi</h5>
         </a>
       </div>
     </div>

@@ -36,11 +36,6 @@ require("../../controller/session-validation.php"); ?>
             <div class="flex-column flex-lg-row d-flex justify-content-between gap-3 pb-3 mb-4 border-bottom">
                 <h1>Daftar Barang</h1>
                 <div class="flex-column flex-lg-row d-flex gap-3 align-items-start align-items-lg-center ">
-                    <div class="d-flex align-items-center gap-3">
-                        <label for="searchDatabarang" class="form-label">Search</label>
-                        <input type="text" class="form-control" id="searchDatabarang">
-                        <button type="button" class="btn btn-primary"><i class="bi bi-search"></i></button>
-                    </div>
                     <a href="./input-data-barang.php">
                         <button type="button" class="btn btn-primary"><i class="bi bi-plus-lg"></i> Input Data</button>
                     </a>
