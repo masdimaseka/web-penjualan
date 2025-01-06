@@ -26,10 +26,8 @@ if (isset($_POST['submit'])) {
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['id'] = $row['id'];
 
-                // Pastikan tidak ada output sebelum header
                 header('Location: ../index.php');
                 exit;
-                // echo "berhasil";
             } else {
                 $_SESSION['message'] = [
                     'type' => 'danger',
