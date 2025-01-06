@@ -44,6 +44,9 @@ session_start(); ?>
                         <input class="form-control" type="password" placeholder="Password kamu..." id="password" name="password">
                     </div>
                     <button type="submit" name="submit" class="mt-5 py-2 btn btn-primary w-100">Sign In</button>
+                    <a href="./register.php">
+                        <button type="button" class="mt-3 py-2 btn btn-secondary w-100">Sign Up</button>
+                    </a>
                 </form>
             </div>
             <div class="d-none d-lg-block">
